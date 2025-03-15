@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "botify"
+version = "0.1.0"
+description = "Spotify bot to automatically create playlists according to the users listening preferences."
+authors = ["Fabian Koch <fabian.cook@web.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+requests = "^2.32.3"
+
+[tool.poetry.scripts]
+app = "src.botify.app:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
